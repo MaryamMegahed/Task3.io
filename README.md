@@ -46,13 +46,16 @@ Here  you are neither allowed to change the const pointer variable nor the value
 the objects of a class can also be declared as const. An object declared as const cannot be modified and hence, can invoke only const member functions as these functions ensure not to modify the object.
 Example
 >
+
 const Class_Name Object_name;
+
 >
 •	When a function is declared as const, it can be called on any type of object, const object as well as non-const objects.
 •	Whenever an object is declared as const, it needs to be initialized at the time of declaration. However, the object initialization while declaring is possible only with the help of constructors.
 There are two ways of a constant function declaration:
 #### Ordinary const-function Declaration:
 >
+
 const void foo()
 {
    //void foo() const Not valid
@@ -61,9 +64,11 @@ int main()
 {
    foo(x);
 } 
+
 >
 ####  const member function of the class:
 >
+
 class
 {
    void foo() const
@@ -71,10 +76,12 @@ class
        //.....
    }
 }
+
 >
 ### Constant Function Parameters And Return Type:
 #### For const parameter 
 >
+
 void foo(const int y)
 {
     // y = 6; const value
@@ -85,15 +92,16 @@ int main()
 {
     int x = 9;
     const int z = 10;
-   
     foo(z);
     foo(x);
 }
+
 >
 There is no substantial issue to pass const or non-const variable to the function
 #### For const return type: 
  it returns a const integer value to us.
 >
+ 
 const int foo(int y)
 {
     y--;
@@ -106,24 +114,25 @@ int main()
     const int z = 10;
     cout << foo(x) << '\n' << foo(z);
  }
+ 
 >
 the value that will be returned by the function will be constant but There is no substantial issue to pass const or non-const variable to the function
 #### For const return type and const parameter:
-> 
+>
+
 const int foo(const int y)
 {
     // y = 9; it'll give CTE error as
     // y is const var its value can't be change
     return y;
 }
- 
-// Driver code
 int main()
 {
     int x = 9;
     const int z = 10;
     cout << foo(x) << '\n' << foo(z);
 }
+
 >
 Note :
 both const and non-const values can be passed as the const parameter to the function, but we are not allowed to then change the value of a passed variable because the parameter is const
