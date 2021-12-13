@@ -44,6 +44,7 @@ Here  you are neither allowed to change the const pointer variable nor the value
 ### Constant Methods:
 the objects of a class can also be declared as const. An object declared as const cannot be modified and hence, can invoke only const member functions as these functions ensure not to modify the object.
 Example
+
 ```
 const Class_Name Object_name;
 ```
@@ -51,6 +52,7 @@ const Class_Name Object_name;
 •	Whenever an object is declared as const, it needs to be initialized at the time of declaration. However, the object initialization while declaring is possible only with the help of constructors.
 There are two ways of a constant function declaration:
 #### Ordinary const-function Declaration:
+
 ```
 const void foo()
 {
