@@ -125,3 +125,31 @@ int main()
 ```
 Note :
 both const and non-const values can be passed as the const parameter to the function, but we are not allowed to then change the value of a passed variable because the parameter is const
+## Ampersand $
+This operation  & has a lot of meanings and in each meaning has an applications :
+### Applications of & : 
+#### & to get the address of a variable
+When using & on the right-hand side of a variable, it's known as the "address-of operator". if you put it in front of a variable, it'll return its address in the memory instead of it's value .It is useful for pointer declarations.
+```
+string mrSamberg=”Maryam”;
+string* theBoss;
+theBoss = &mrSamberg;
+```
+####  & to declare a reference to a type
+
+When we use & in the left-hand side of a variable declaration then  the variable is declared as a reference, it becomes an alternative name for an existing variable
+It can be used in any type of declarations (local variables, class members, method parameters).
+```
+    int x = 10;
+  // ref is a reference to x.
+  int& ref = x;
+  // Value of x is now changed to 20
+  ref = 20;
+  cout << "x = " << x << endl;//x = 20
+```
+####  & as a bit-wise operator
+It is the bitwise AND. This operator takes two numbers as inputs and the output is true only if the two inputs is true
+
+#### && in a logical expression
+&& comparing between two things In the logical expression ,if the two things their values is true then the output of the logical expression is true 
+
