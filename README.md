@@ -8,9 +8,9 @@ There are some rules for the declaration and initialization of the constant vari
 •	Explicit value needed to be provided to the constant variable at the time of declaration of the constant variable.
 Example 
 
->
+```
 const int y = 10;
->
+```
 
 ### Const Keyword With Pointer Variables:
 there are three possible ways to use a const keyword with a pointer
