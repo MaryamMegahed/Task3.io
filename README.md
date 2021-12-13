@@ -125,7 +125,7 @@ int main()
 ```
 Note :
 both const and non-const values can be passed as the const parameter to the function, but we are not allowed to then change the value of a passed variable because the parameter is const
-## Ampersand $
+## Ampersand &
 This operation  & has a lot of meanings and in each meaning has an applications :
 ### Applications of & : 
 #### & to get the address of a variable
