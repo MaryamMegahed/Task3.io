@@ -9,7 +9,7 @@ There are some rules for the declaration and initialization of the constant vari
 Example 
 >
 const int y = 10;
->
+<
 
 ### Const Keyword With Pointer Variables:
 there are three possible ways to use a const keyword with a pointer
