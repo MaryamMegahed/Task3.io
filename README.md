@@ -152,5 +152,3 @@ It is the bitwise AND. This operator takes two numbers as inputs and the output 
 
 #### && in a logical expression
 && comparing between two things In the logical expression ,if the two things their values is true then the output of the logical expression is true 
-
-
