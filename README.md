@@ -1,7 +1,7 @@
 # Task3.io
-##const
+## const
  const keyword is attached with any method(), variable, pointer variable, and with the object of a class it prevents that specific object/method()/variable to modify its data items value.
-###Constant Variables:
+### Constant Variables:
 There are some rules for the declaration and initialization of the constant variables:
 •	The const variable cannot be left un-initialized at the time of the assignment.
 •	It cannot be assigned value anywhere in the program.
@@ -10,9 +10,9 @@ Example
 >
 const int y = 10;
 >
-###Const Keyword With Pointer Variables:
+### Const Keyword With Pointer Variables:
 there are three possible ways to use a const keyword with a pointer
-####. the pointer variable point to a const value
+#### . the pointer variable point to a const value
 Example
 >
 int main()
@@ -26,13 +26,13 @@ int main()
 }
 > 
 Note that i and j are pointing to a memory location const int-type and char-type, but the value stored at these locations can be changed 
-####. the const pointer variable point to the value
+#### . the const pointer variable point to the value
 >
 data_type* const var_name;
 >
 Note  The values that are stored in the pointer are modifiable, but the locations that are pointed out by const-pointer variables where the values are stored aren’t modifiable. 
 
-####.const pointer pointing to a const variable
+#### .const pointer pointing to a const variable
 >
 const data_type* const var_name;
 >
